@@ -1,0 +1,14 @@
+.wrapper
+{
+    margin: auto;
+    width: 620px;
+}
+.line
+{
+    border-bottom: 1px solid grey
+}
+
+h1
+{
+    text-align: center
+}
