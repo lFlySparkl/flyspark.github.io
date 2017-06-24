@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #f9f9f9;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.wrapper {
+    background-color: white;
+    width: 1060px;
+    margin: auto;
+    padding: 40px;
+}
+.shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
+.item-menu {
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+    font-family: "Tahoma";
+    line-height: 2.4;
+    padding: 0 25px;
+}
+
+.menu-padding {
+    padding: 0px;
+}
+
+.item-menu:hover {
+    background-color: #3f3f3f;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: #838383;
+}
+
+.menu {
+    background-image: -moz-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94, 94) 100%);
+    height: 40px;
+}
+
+.conteiner {
+    background-color: white;
+    width: 1060px;
+    color: #656363;
+}
+
+.item-container {
+    padding: 20px;
+    border-right: solid 1px #c8c8c8;
+    border-left: solid 1px #c8c8c8;
+    border-top: solid 1px #c8c8c8;
+    list-style-type: none;
+}
+
+.item-container-last {
+    border-bottom: solid 1px #c8c8c8;
+}
+
+.item-container:hover {
+    background-color: #f9f9f9;
+    text-indent:8px;
+    color: black;
+}
+
+.img-line {
+    border: solid 1px #c8c8c8;
+}
+
+.block1 {
+    padding-top: 20px;
+    float: left;
+    width: 30%;
+}
+
+.block2 {
+    padding-top: 20px;
+    float: right;
+    width: 65%;
+}
+p{
+    margin-bottom: 25px;
+}
+
+.footer {
+    height: 40px;
+    background-color: #e1e1e1;
+    clear: both;
+}
+
+.item-footer {
+    display: inline-block;
+    list-style-type: none;
+    font-family: "Tahoma";
+    line-height: 2.4;
+    margin: 0 25px;
+}
+.item-footer-underline{
+    text-decoration: underline;
+}
+
+.item-footer-right {
+    float: right;
+}
