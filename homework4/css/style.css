@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("../img/bg.png");
+    background-position-y: -5px;
+}
+
+.wrapper {
+    position: inherit;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.logo {
+    padding: 8px;
+    float: left;
+}
+.logo img{
+    position: relative;
+    top: 10px;
+}
+
+.contacts {
+    padding: 10px;
+    float: right;
+}
+
+.text-contacts {
+    list-style-type: none;
+    color: #128aa7;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.text-logo {
+    font-family: "Tahoma";
+    color: #128aa7;
+    line-height: 1.2;
+    top: -80px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix-countries:after, clearfix-countries::before {
+    content: "";
+    display: table;
+    clear: right;
+}
+
+.flag {
+    float: right;
+    margin-right: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.photo {
+    margin-top: -22px;
+    margin-bottom: -4px;
+    width: 100%;
+    border-top: solid 1px #128aa7;
+    border-bottom: solid 1px #128aa7;
+}
+
+.footer {
+    font-family: "Tahoma";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.2;
+    text-align: center;
+    margin: 10px;
+}
+
+ul.dropdown li {
+    position: relative;
+}
+
+ul.dropdown,
+ul.dropdown-inside {
+    list-style-type: none;
+    padding: 0;
+    height: 37px;
+    background-color: #343434;
+}
+
+ul.dropdown-inside {
+    position: absolute;
+    left: -9999px;
+}
+
+ul.dropdown li.dropdown-top {
+    display: inline;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+ul.dropdown li.dropdown-top a {
+    width: 100%;
+    height: 30px;
+    padding: 3px 54px 4px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.dropdown-img:after{
+    font-size: 10px;
+    content: " ▼";
+}
+.dropdown-top{
+    width: 13%;
+}
+
+ul.dropdown a.dropdown-top {
+    background: #343434;
+    color: white;
+}
+
+ul.dropdown a.dropdown-top:hover {
+    /*background: white;*/
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+    display: block;
+    left: 0;
+}
+
+ul.dropdown .dropdown-inside {
+    background: #343434;
+}
+
+ul.dropdown .dropdown-inside a:hover {
+    background: #343434;
+}
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+}
+.content{
+    width: 50%;
+
+}
+.news, .information{
+    background-color: #edeef0;
+    width: 25%;
+    /*padding: 15px;*/
+    text-align: center;
+    border-left: solid 1px #c7cacf;
+    border-right: solid 1px #c7cacf;
+}
+.line{
+    border-bottom: solid 1px #c7cacf;
+}
+hr{
+    width: 100%;
+}
+.text{
+margin: 15px;
+}
