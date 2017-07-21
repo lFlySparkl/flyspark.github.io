@@ -4,19 +4,20 @@
 }
 
 body {
-    background-image: url("../img/bg.png");
-    background-position-y: -5px;
+    background: #0c739f linear-gradient(to bottom,
+    #128aa7, #128aa7 30px,
+    #5ef0ff 30px, #5ef0ff 31px,
+    #10cde1 31px, #fff 183px,
+    #40c6d3 175px, #0c739f 1020px);
+    background-repeat: no-repeat;
 }
 
 .wrapper {
-    position: inherit;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 0px auto 25px;
     width: 80%;
     height: 100%;
     background-color: white;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 .shadow {
@@ -27,9 +28,10 @@ body {
     padding: 8px;
     float: left;
 }
-.logo img{
+
+.logo img {
     position: relative;
-    top: 10px;
+    top: 9px;
 }
 
 .contacts {
@@ -59,7 +61,7 @@ body {
     clear: both;
 }
 
-.clearfix-countries:after, clearfix-countries::before {
+.clearfix-header::after, clearfix-header::before {
     content: "";
     display: table;
     clear: right;
@@ -70,6 +72,10 @@ body {
     margin-right: 15px;
     font-size: 13px;
     text-align: center;
+}
+
+.flag span {
+    display: block;
 }
 
 .photo {
@@ -88,91 +94,152 @@ body {
     margin: 10px;
 }
 
-ul.dropdown li {
-    position: relative;
-}
-
-ul.dropdown,
-ul.dropdown-inside {
-    list-style-type: none;
-    padding: 0;
-    height: 37px;
-    background-color: #343434;
-}
-
-ul.dropdown-inside {
-    position: absolute;
-    left: -9999px;
-}
-
-ul.dropdown li.dropdown-top {
-    display: inline;
-    float: left;
-    margin: 0 1px 0 0;
-}
-
-ul.dropdown li.dropdown-top a {
-    width: 100%;
-    height: 30px;
-    padding: 3px 54px 4px;
-    display: block;
-    color: white;
-    text-decoration: none;
-}
-.dropdown-img:after{
-    font-size: 10px;
-    content: " ▼";
-}
-.dropdown-top{
-    width: 13%;
-}
-
-ul.dropdown a.dropdown-top {
-    background: #343434;
-    color: white;
-}
-
-ul.dropdown a.dropdown-top:hover {
-    /*background: white;*/
-}
-
-ul.dropdown li.dropdown-top:hover .dropdown-inside {
-    display: block;
-    left: 0;
-}
-
-ul.dropdown .dropdown-inside {
-    background: #343434;
-}
-
-ul.dropdown .dropdown-inside a:hover {
-    background: #343434;
-}
 .col-container {
     display: table;
     width: 100%;
 }
+
 .col {
     display: table-cell;
 }
-.content{
+
+.content {
     width: 50%;
 
 }
-.news, .information{
+
+.news, .information {
     background-color: #edeef0;
     width: 25%;
-    /*padding: 15px;*/
     text-align: center;
     border-left: solid 1px #c7cacf;
     border-right: solid 1px #c7cacf;
 }
-.line{
+
+.line {
     border-bottom: solid 1px #c7cacf;
 }
-hr{
+p{
+    margin: 15px;
+}
+
+hr {
     width: 100%;
 }
-.text{
-margin: 15px;
+
+/*.text {
+    margin: 15px;
+}*/
+
+h1 {
+    font-size: 2.25em;
+    text-align: center;
+    margin: 50px;
+}
+
+/* ===================================    MENU   =============================*/
+/* =======================================  UL ===============================*/
+/* ================= ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН ВСЕГО МЕНЮ =======*/
+ul.menu {
+    margin: auto; /* центрируем    */
+    width: 100%; /* центрируем    */
+    list-style: none; /* убираем точки-маркеры   */
+    background-color: #343434; /* задаем цвет фону меню  */
+}
+
+/*зачищаем края. Без этого блока будут проблемы с нижними соседями по потоку */
+ul.menu:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* ====================================  LI  =================================*/
+/* =============== ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН КНОПКИ МЕНЮ  =============*/
+/*  Зададим точку отсчета для  абсолютного позиционирования
+                                                от левого верхнего угла UL */
+li.menu__item {
+    float: left;
+    text-align: center;
+    position: relative;
+    /*width: 135px;*/
+    width: 15%;
+    height: 40px;
+    box-sizing: border-box;
+    border-left: 5px solid #343434;
+}
+
+li.menu__item1 {
+     float: left;
+     text-align: center;
+     position: relative;
+     /*width: 150px;*/
+     width: 15%;
+     height: 40px;
+     box-sizing: border-box;
+     border-left: 5px solid #343434;
+ }
+li.menu__item2 {
+    float: left;
+    text-align: center;
+    position: relative;
+    /*width: 100px;*/
+    width: 10%;
+    height: 40px;
+    box-sizing: border-box;
+    border-left: 5px solid #343434;
+}
+
+/* ===============================  A  ====================================== */
+/* ========== ОБЛАСТЬ КЛИКА = ГАБАРИТЫ ГРАНИЦЫ  ФОН ТЕКСТ КНОПКИ МЕНЮ  ====== */
+
+a.menu__link {
+    display: block; /* блочному элементу можно задать размеры */
+    padding: 10px; /* паддинг ссылки -кликабелн                  */
+    color: white; /* цвет текста                                */
+    text-decoration: none; /*  убираем по умолчнию подчеркивание ссылки  */
+    /*background: blue;              */
+}
+
+a.menu__link:hover {
+    background-color: #343434; /* изменение оформления  - фон*/
+    color: white; /* цвет текста  */
+}
+
+/* ===========================  SUBMENU  UL ================================= */
+/* ================= ГАБАРИТЫ ПОЛОЖЕНИЕ ГРАНИЦЫ ФОН ВСЕГО МЕНЮ ============= */
+
+ul.submenu {
+    display: none; /*по умолчанию поля подменю - есть, но не отображаются */
+    position: absolute;
+    width: 135px;
+    top: 40px; /* должно быть непрерывное соединение с hover элемента-предка  */
+    left: 0;
+    border: 1px solid #343434;
+    box-shadow: 4px 4px 4px hsla(200, 0%, 0%, 0.6);
+}
+
+/* Элемент не обязательный, для страховки */
+li.submenu__item {
+    display: block;
+}
+
+/* ===============================     SUBMENU  A     ======================================== */
+/* ========== ОБЛАСТЬ КЛИКА = ГАБАРИТЫ ГРАНИЦЫ  ФОН ТЕКСТ КНОПКИ МЕНЮ  ==================== */
+a.submenu__link {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #343434;
+    text-decoration: none;
+}
+
+a.submenu__link:hover {
+    text-decoration: underline; /*при наведении на ссылку в подменю - появляется подчеркивание*/
+}
+
+/* =============================   SWITCH ON: SUBMENU  UL ==================================== */
+/*при наведении на элемент списка верхнего урвня li:hover - меню проявляется*/
+ul.menu > li.menu__item:hover > ul.submenu {
+    display: block;
 }
