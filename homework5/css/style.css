@@ -4,6 +4,8 @@
 }
 
 body {
+    background: url(../img/bg.jpg);
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -14,11 +16,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-.wrapper {
-    background: url(../img/bg.jpg);
-    background-size: cover;
-    width: 100%;
-}
 
 /*--------------------------------------------------------menu-------------------------------------------------------*/
 .menu {
@@ -28,7 +25,7 @@ body {
 }
 
 .menu__item1 {
-    display: inline-block;
+    list-style-type: none;
     float: right;
     text-decoration: none;
     text-align: center;
@@ -143,13 +140,19 @@ a.menu__link:hover {
     background-color: #5B7BD5;
     background-image: linear-gradient(#5B7BD5, #4864B1);
 }
-
-.reg_form {
+.reg_window{
     margin-left: 35%;
     margin-top: 50%;
-    transform: translateY(-130%);
+    transform: translateY(-95%);
+    width: 500px;
+    height: 700px;
+}
+.reg_form {
+    /*margin-left: 35%;*/
+    /*margin-top: 50%;*/
+    /*transform: translateY(-130%);*/
     background-color: rgba(59, 62, 48, 0.5);
-    width: 30%;
+    /*width: 30%;*/
     text-align: center;
     line-height: 40px;
 }
