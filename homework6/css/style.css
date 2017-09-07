@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    background-color: #fff;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wrapper {
+    width: 910px;
+    margin: 0 auto -100px;
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+}
+
+/*----------------HEADER-----------*/
+
+.header {
+    height: 277px;
+    width: 100%;
+    padding: 13px 0 0 0;
+    position: relative;
+}
+
+.phones {
+    color: #213a4d;
+    float: left;
+    height: 27px;
+    width: auto;
+    padding: 10px 0 0 5px;
+}
+
+.phones img {
+    float: left;
+}
+
+.phones span {
+    font: 18px/19px Arial, Helvetica, sans-serif;
+    margin: 5px 0 0 5px;
+}
+
+.login-form {
+    width: 495px;
+    height: 27px;
+    background-color: #1e6383;
+    border: #1e6383;
+    border-radius: 5px;
+    float: left;
+    margin: 4px 0 0 21px;
+}
+
+.login-form div {
+    float: left;
+    height: 100%;
+}
+
+.login-center form {
+    width: 278px;
+    float: left;
+    margin: 1px -4px 0 5px;
+}
+
+.login-center form input {
+    float: left;
+    font: 12px/13px Arial, Helvetica, sans-serif;
+    width: 113px;
+    height: 14px;
+    padding: 0;
+    color: #51676f;
+    border: 1px solid #97a2a6;
+    margin: 0 4px 0 0;
+}
+
+.login-center a {
+    margin: 1px 0 0 0;
+    color: #fff;
+    font: 11px/13px Arial, Helvetica, sans-serif;
+}
+
+.login-center span {
+    color: #fff;
+    font-size: 11px;
+}
+
+.login-form-submit {
+    float: right;
+    height: 13px;
+    width: 40px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 11px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mini-menu {
+    height: 20px;
+    width: 85px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    float: right;
+    padding: 9px 0 0 0;
+}
+
+.mini-menu img {
+    margin: 0 -1px 0 10px;
+}
+
+.center-image {
+    float: left;
+    width: 909px;
+    height: 237px;
+    background: url(../img/bg.jpg) no-repeat;
+}
+
+.center-image a {
+    display: block;
+    margin: 100px 0 0 2px;
+    width: 266px;
+    height: 70px;
+}
+
+/*---------------------CENTER-MENU-----------*/
+
+.main-menu {
+    width: 915px;
+    height: 41px;
+    margin: 4px 0 0 -1px;
+}
+
+.main-menu div {
+    float: left;
+}
+
+.main-menu-center {
+    width: 909px;
+    height: 31px;
+    border: 1px solid #191b1e;
+    border-radius: 5px;
+    background-image: linear-gradient(#4d5663, #030303);
+}
+
+.main-menu-center ul {
+    display: block;
+    height: 30px;
+    width: 575px;
+    float: left;
+    padding:0 100px;
+}
+
+.main-menu-center ul li {
+    display: inline-block;
+    font: 14px/19px Arial, Helvetica, sans-serif;
+    color: #fff;
+    width: 105px;
+    float: left;
+    padding: 1px 0;
+}
+
+.main-menu-center ul li a {
+    color: #b1bcc0;
+    padding: 4px 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.main-menu-center ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #103d61;
+    border-radius: 15px;
+}
+
+.case {
+    margin: -22px 20px 0 0;
+    /*height: 17px;*/
+    /*width: 216px;*/
+    float: right !important;
+    color: #fff;
+}
+
+.case span {
+    position: relative;
+    /*top: -2px;*/
+    left: 0;
+    color: #899296;
+    font: 12px/8px Arial, Helvetica, sans-serif;
+}
+
+.case img {
+    margin: -3px 0 0;
+    float: left;
+}
+
+.search {
+    margin: 5px 0 0 0;
+    width: 100%;
+    height: 144px;
+    padding: 10px 0;
+}
+
+.search form {
+    height: 100%;
+}
+
+.search-car {
+    position: relative;
+    float: left;
+    width: 384px;
+    padding: 2px 18px 0 18px;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.search-tires {
+    position: relative;
+    margin: 0 6px;
+    padding: 2px 14px 0 14px;
+    float: left;
+    width: 170px;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.search-wheels {
+    position: relative;
+    float: left;
+    padding: 2px 14px 0 14px;
+    width: 246px;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.search-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #114165;
+    display: block;
+    text-align: center;
+    margin: 0 auto -10px;;
+}
+
+.title-left {
+    text-align: left;
+}
+
+.title-right {
+    text-align: right;
+    margin: -14px 0 0 0;
+}
+
+.search-properties {
+    width: 180px;
+    height: 90px;
+    float: left;
+    padding: 5px 0 0 0;
+}
+
+.prop-margin {
+    margin: 0 0 0 20px;
+}
+
+/* here "prop" means "properties" */
+.search-prop-inner {
+    height: 17px;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+.search-prop-inner span {
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    height: 10px;
+}
+
+.search-prop-inner select {
+    margin: 2px 0 0 0;
+    height: 17px;
+    width: 100px;
+    float: right;
+    background: none;
+    padding: 0;
+    border-top: 1px solid #979797;
+    border-left: 1px solid #979797;
+    border-bottom: 0;
+    border-right: 0;
+    font-size: 10px;
+    outline: none;
+}
+
+.search-go {
+    float: right;
+    border: none;
+    background: url(../img/search-go.png) no-repeat;
+    height: 12px;
+    width: 52px;
+    margin: 2px 16px 0 0;
+}
+
+.search-go[disabled="disabled"] {
+    float: right;
+    border: none;
+    height: 12px;
+    width: 52px;
+    margin: 2px 16px 0 0;
+}
+.tires-prop {
+    width: 170px;
+    margin: 14px 0 0 0;
+}
+
+.tires-prop select {
+    width: 50px;
+    float: left;
+}
+
+.tires-prop span {
+}
+
+.check-div span {
+    float: left;
+    margin: 2px 0 0 0;
+    display: block;
+}
+
+.check-div input {
+    float: left;
+    margin: 2px 3px 0 0;
+    display: block;
+}
+
+.check-div {
+    margin: 5px 0 0 0;
+    height: 10px;
+    width: 90px;
+    float: left;
+}
+
+.wheels-right {
+    border-left: 1px solid #bdc6ca;
+    float: right;
+    width: 80px;
+    height: 107px;
+    position: absolute;
+    top: 4px;
+    left: 160px;
+    padding: 0 0 0 10px;
+    font-size: 10px;
+}
+
+.wheels-right span {
+    display: block;
+    height: 10px;
+    float: left;
+}
+
+.wheels-right select {
+    width: 50px;
+    float: left;
+    margin: 4px 0 0 0;
+    background: none;
+    padding: 0;
+    border-top: 1px solid #979797;
+    border-left: 1px solid #979797;
+    border-bottom: 0;
+    border-right: 0;
+    font-size: 10px;
+    outline: none;
+}
+.left-side {
+    float: left;
+    width: 190px;
+    height: auto;
+    min-height: 300px;
+    margin: 0 0 30px 0;
+}
+
+.center-content {
+    float: left;
+    margin: 0 2px 30px;
+    padding: 0 0 10px 0;
+    background-image: linear-gradient(#e5e7e8, #93a7b0);
+    width: 526px;
+    height: auto;
+}
+
+.right-side {
+    padding: 0 0 0 3px;
+    float: left;
+    width: 187px;
+    height: auto;
+    min-height: 350px;
+    margin: 0 0 30px 0;
+}
+.middle {
+    width: 100%;
+    height: auto;
+    margin: 5px 0 0 0;
+}
+
+.side-menu-title {
+    height: 25px;
+    width: 156px;
+    padding: 6px 0 0 30px;
+    background: url(../img/menu-title-back.png) no-repeat;
+    color: #114165;
+    font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.side-menu-block {
+    height: auto;
+    width: 180px;
+    padding: 0 0 0 3px;
+    margin: 10px 0 10px 0;
+}
+
+.side-block-title {
+    padding: 7px 0 0 32px;
+    display: block;
+    width: 118px;
+    height: 21px;
+    background: url(../img/menu-item-title-back.png) no-repeat;
+    color: #114165;
+    font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.side-menu-item {
+    display: block;
+    width: 130px;
+    height: 14px;
+    padding: 1px 0 0 10px;
+    margin: 10px 0 0 30px;
+    color: #465961;
+    font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
+    font-weight: normal;
+}
+
+.side-menu-item-active {
+    display: block;
+    width: 130px;
+    height: 14px;
+    padding: 1px 0 0 10px;
+    margin: 10px 0 0 30px;
+    color: #465961;
+    font: 14px/13px "Lucida Sans Unicode", Verdana, Arial;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.side-menu-item:hover {
+    font-size: 13px;
+    font-weight: bold;
+    color: #0c3256;
+}
+.right-menu-choose {
+    height: 30px;
+    width: 83px;
+    border: 1px solid #1b5a7b;
+    border-radius: 20px;
+    background-color: #1b5a7b;
+    /*background: url(../img/choose-button-back.png) no-repeat;*/
+    color: white;
+    text-align: center;
+    margin: 10px 0 0 25px;
+    cursor: pointer;
+}
+
+.checkbox-menu-item {
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 100%;
+    color: #465961;
+    margin: 6px 0 5px;
+    padding: 0 0 0 30px;
+    font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.checkbox-menu-item input {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+}
+
+.middle-item {
+    float: left;
+    width: 140px;
+    height: 180px;
+    text-align: center;
+    margin: 15px 17px;
+}
+
+.middle-item-company {
+    color: #206988;
+    font: 14px/14px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.middle-item-model {
+    margin: 0 0 3px 0;
+    color: #1f2528;
+    height: 26px;
+    font: 11px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.middle-item-image {
+    text-align: center;
+    display: table;
+    width: 140px;
+    height: 129px;
+    background-color: white;
+}
+
+.middle-item-image a {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.middle-item-image a img {
+    max-width: 136px;
+}
+
+.middle-item-price {
+    margin: 5px 0 0 0;
+    color: #114165;
+    font: bold 13px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.middle-item-company2 {
+    color: #206988;
+    width: 150px;
+    text-align: center;
+    font: 15px/14px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.middle-item-model2 {
+    text-align: center;
+    width: 150px;
+    margin: 3px 0 3px 0;
+    color: #1f2528;
+    font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+
+.middle-item-price2 {
+    width: 130px;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    left: 207px;
+    margin: 5px 0 0 0;
+    color: #114165;
+    font: bold 13px/13px "Lucida Sans Unicode", Verdana, Arial;
+}
+.tire-companies {
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+}
+/*---------------------FOOTER---------------*/
+.footer {
+    margin: 0 auto;
+    /*width: 100%;*/
+    height: 100px;
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #213a4d;
+}
+
+.footer ul {
+    padding: 10px 0 10px 0;
+}
+
+.footer ul li {
+    display: inline;
+    color: #bec6c9;
+    font-size: 13px;
+}
+
+.footer ul li a:hover {
+    color: #52abcb;
+    text-decoration: none;
+}
+
+.footer p {
+    padding: 0 0 3px 0;
+    color: #d04435;
+    font-size: 11px;
+}
+
+.footer p a {
+    color: #d04435;
+}
