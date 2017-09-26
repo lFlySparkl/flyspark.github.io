@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/craftyslide.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Carter+One&v1' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One&v1' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <h1 class="logo__margin">PINGBULL
+                        <b class="logo__mod">ER</b>
+                    </h1>
+                </div>
+                <div >
+                    <ul class="menu menu--vertical">
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--active menu__link--vertical menu__link--active--vertical" href="">HOME</a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--vertical" href="">ABOUT</a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--vertical" href="">BLOG</a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--vertical" href="">PRODUCTS</a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--vertical" href="">LOREM IPSUM</a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--vertical">
+                            <a class="menu__link menu__link--vertical" href="">DOLOR SIT AMET</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slider_none" id="wrapper">
+            <div id="slideshow">
+                <ul>
+                    <li><img src="img/1.png" alt="Flower and Bee"/></li>
+                    <li><img src="img/2.png" alt="Flower"/></li>
+                    <li><img src="img/1.png" alt="Leaf"/></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="js/craftyslide.min.js"></script>
+        <script type="text/javascript">
+            $("#slideshow").craftyslide({
+                'width': 640,
+                'height': 300,
+                'pagination': true,
+                'fadetime': 500,
+                'delay': 500
+            });
+        </script>
+    </div>
+    <div class="text">
+        <div class="text-wrapper">
+            <div class="box">
+                <img class="text_icon" src="img/9.png" alt="" width="30" height="31">
+                <h2 class="text__title">ABOUT OUR COMPANY</h2>
+                <p class="text__par">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                    Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
+                <a class="text__link" href="">READ MORE</a>
+            </div>
+            <div class="box">
+                <img class="text_icon" src="img/10.png" alt="" width="33" height="29">
+                <h2 class="text__title">ABOUT OUR COMPANY</h2>
+                <p class="text__par">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                    Pellentesque vel lacus eget nisi convallis auctor.</p>
+                <a class="text__link" href="">READ MORE</a>
+            </div>
+            <div class="box">
+                <img class="text_icon" src="img/11.png" alt="" width="29" height="31">
+                <h2 class="text__title">ABOUT OUR COMPANY</h2>
+                <p class="text__par">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                    Pellentesque vel lacus eget nisi convallis auctor.</p>
+                <a class="text__link" href="">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="contant">
+        <div class="contant-wrapper">
+            <div class="stars">
+                <figure class="star">
+                    <header>
+                        <img class="star__photo" src="img/avatar.png" alt="" width="49" height="51">
+                        <h2 class="star__title">Pingbuller
+                            <span class="star__highlight">starts here</span></h2>
+                    </header>
+                    <p class="star__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero
+                        pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec
+                        metus ultricies erat consequat dignissim non eu nisl.”</p>
+                </figure>
+            </div>
+            <div class="blog">
+                <header class="blog__head">
+                    <h2 class="blog__title">Recent updates</h2>
+                </header>
+                    <figure class="blog-post">
+                        <img class="blog-post__photo" src="img/circle_1.png" alt="">
+                        <h2 class="blog-post__title">Nunc turpis neque feugiat eget</h2>
+                        <h3 class="blog-post__info">Posted by Admin on March 13 2012 in Recent News</h3>
+                    </figure>
+                <figure class="blog-post">
+                    <img class="blog-post__photo" src="img/circle_1.png" alt="">
+                    <h2 class="blog-post__title">Nunc turpis neque feugiat eget</h2>
+                    <h3 class="blog-post__info">Posted by Admin on March 13 2012 in Category</h3>
+                </figure>
+                <figure class="blog-post">
+                    <img class="blog-post__photo" src="img/circle_1.png" alt="">
+                    <h2 class="blog-post__title">Nunc turpis neque feugiat eget</h2>
+                    <h3 class="blog-post__info">Posted by Admin on March 13 2012 in Blog Updates</h3>
+                </figure>
+                <a class="blog__link" href="">READ MORE HERE</a>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <div class="brands-wrapper">
+            <ul class="brands-box">
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos1.png" alt="" width="69" height="64"></a>
+                </li>
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos2.png" alt="" width="72" height="64"></a>
+                </li>
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos3.png" alt="" width="65" height="65"></a>
+                </li>
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos4.png" alt="" width="50" height="63"></a>
+                </li>
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos5.png" alt="" width="103" height="21"></a>
+                </li>
+                <li class="brands__item">
+                    <a href="#"><img src="img/logos6.png" alt="" width="78" height="61"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="activity">
+        <div class="activity-wrapper">
+            <div class="box activity-text activity-hide-low">
+                <article class="recent activity-wrap--left">
+                <h1 class="recent__title">
+                PINGBULL
+                <b class="text_color activity_logo">ER</b>
+            </h1>
+                <p>
+                <p class="text_color">Copyright 2013, Pingbull AS</p>
+                    <p class="recent__paragraph">
+                Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellen</p>
+                </p>
+                </article>
+            </div>
+            <div class="box activity-wrap--middle activity-hide-low">
+                <article class="recent activity-text">
+                <h2 class="recent__title">RECENT COMMENTS</h2>
+                <p class="recent__paragraph recent__paragraph--custom">
+                    Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                    Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                    Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque.
+                </p>
+                </article>
+            </div>
+            <div class="box activity-wrap--right activity-hide-low">
+                <article class="recent activity-text activity-position">
+                <h2 class="recent__title">NEWS CATEGORIES</h2>
+                <p class="recent__paragraph recent__paragraph--custom">
+                    Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                    Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                    Quisque urna risus, mattis pulvinar bibendum in, venenatis
+                </p>
+                </article>
+            </div>
+            <div class="box activity-hide-high">
+                <article class="recent activity-text">
+                    <h2 class="recent__title">NEWS CATEGORIES</h2>
+                    <p class="recent__paragraph recent__paragraph--custom">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis
+                    </p>
+                </article>
+            </div>
+            <div class="box activity-hide-high">
+                <article class="recent activity-text">
+                    <h2 class="recent__title">NEWS CATEGORIES</h2>
+                    <p class="recent__paragraph recent__paragraph--custom">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis
+                    </p>
+                </article>
+            </div>
+            <div class="box activity-hide-high">
+                <article class="recent activity-text">
+                    <h2 class="recent__title">NEWS CATEGORIES</h2>
+                    <p class="recent__paragraph recent__paragraph--custom">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <ul class="menu menu--footer">
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link  menu__link--footer menu__link--active" href="">HOME</a>
+                </li>
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link menu__link--footer" href="">ABOUT</a>
+                </li>
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link menu__link--footer" href="">BLOG</a>
+                </li>
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link menu__link--footer" href="">PRODUCTS</a>
+                </li>
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link menu__link--footer" href="">LOREM IPSUM</a>
+                </li>
+                <li class="menu__list-item menu__list-item--footer">
+                    <a class="menu__link menu__link--footer" href="">DOLOR SIT AMET</a>
+                </li>
+            </ul>
+            <span class="copyright">Designed by <a class="copyright-link" href="">Pingbull AS</a></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
