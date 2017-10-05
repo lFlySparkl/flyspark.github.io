@@ -615,7 +615,7 @@ h2 {
     }
 
     .text-wrapper {
-        width: 440px;
+        /*width: 440px;*/
     }
 
     .text__par {
@@ -627,7 +627,7 @@ h2 {
     }
 
     .contant-wrapper {
-        width: 440px;
+        /*width: 440px;*/
     }
 
     .stars {
@@ -635,11 +635,11 @@ h2 {
     }
 
     .blog {
-        width: 96%;
+        width: 90%;
     }
 
     .brands-wrapper {
-        width: 440px;
+        /*width: 440px;*/
     }
 
     .brands__item {
@@ -651,7 +651,7 @@ h2 {
     }
 
     .activity-wrapper {
-        width: 440px;
+        /*width: 440px;*/
     }
 
     .activity-hide-low {
@@ -667,15 +667,15 @@ h2 {
     }
 
     .footer-wrapper {
-        width: 440px;
+        /*width: 440px;*/
     }
 
     .menu--footer {
-        width: 100%;
+        width: 93%;
     }
 
     .menu__list-item--footer {
-        margin-right: 10px;
+        margin-right: 5px;
         display: inline-block;
     }
 
@@ -684,7 +684,7 @@ h2 {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
     .menu--vertical {
         margin: 20px 0 0 40px;
     }
@@ -694,17 +694,17 @@ h2 {
     }
 
     .text-wrapper {
-        width: 280px;
+        /*width: 280px;*/
     }
     .text__link{
         font-size: 12px;
     }
     .contant-wrapper{
-        width: 280px;
+        /*width: 280px;*/
     }
 
     .stars {
-        width: 85%;
+        width: 80%;
     }
 
     .star__title {
@@ -717,7 +717,7 @@ h2 {
     }
 
     .blog {
-        width: 85%;
+        width: 80%;
     }
 
     .blog-post__title {
@@ -728,7 +728,7 @@ h2 {
     }
 
     .brands-wrapper {
-        width: 280px;
+        /*width: 280px;*/
     }
 
     .brands__item {
@@ -738,7 +738,7 @@ h2 {
         display: none;
     }
     .footer-wrapper{
-        width: 280px;
+        /*width: 280px;*/
     }
     .menu--footer{
         display: none;
@@ -746,5 +746,19 @@ h2 {
     .copyright{
         margin: 40px 0 0 65px;
         float: left;
+    }
+}
+@media (max-width: 300px){
+    .header-wrapper{
+        min-width: 200px;
+    }
+    .contant-wrapper{
+        min-width: 200px;
+    }
+    .brands-wrapper{
+        min-width: 200px;
+    }
+    .footer-wrapper{
+        min-width: 200px;
     }
 }
