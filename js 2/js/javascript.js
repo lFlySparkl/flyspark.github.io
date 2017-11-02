@@ -2,59 +2,80 @@
  рождения в двух форматах: 1988 или 02 (имеется ввиду 2002). Программа должна
  вывести количество лет которое исполнилось пользователю.*/
 
-// function str_pad () {
-// // var old;
-// // old=document.getElementById("1").value;
-// //     var input;
-// //     input=document.getElementById("1").value;
-//
-//     str_pad(test1, 4, '20', 'STR_PAD_LEFT');
-//     console.log(test1);
-// // alert('Вы родились:' + (2017-input));
-// }
+let yearInputBtn = document.getElementById('yearInputBtn');
+yearInputBtn.addEventListener('click', getAge, false);
 
-function func13() {
-    var test1, result;
-    test1 = document.getElementById("11").value;
-    // test1 = parseInt(test1);
-    result = document.getElementById("1234");
+function getAge() {
+    const yearInput = document.getElementById("yearInput").value;
+    const yearInputBtn = document.getElementById("yearInputBtn");
+    const yearInputResult = document.getElementById("enterResult");
 
-    if (test1 >= 1 && test1 <= 17) {
-        result.innerHTML = 'Вам: ' + (2017 - ('20' + test1)) + ' лет.';
+    let fullYear = "Введите правильный год вашего рождения";
+    let date = new Date();
+//getFullYear - Используйте эту функцию, чтобы быть уверенным, что год будет правильным после 2000 года.
+    let year = date.getFullYear();
+
+    if (yearInput.length < 4, yearInput >= 1 && yearInput <= 17) {
+        yearInputResult.innerHTML = 'Вам: ' + (2017 - ('20' + yearInput)) + ' лет.';
     }
-    else if (test1 >= 1900 && test1 <= 1999) {
-        result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет.';
+    else if (yearInput >= 1900 && yearInput <= 1999) {
+        yearInputResult.innerHTML = 'Вам: ' + (2017 - yearInput) + ' лет.';
     }
-    else if (test1 >= 2000 && test1 <= 2017) {
-        result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет.';
-    }
-    else if (test1 >= 100 && test1 <= 1900) {
-        result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет. Но этого не может быть.';
-    }
-    else if (test1 >= 18 && test1 <= 99) {
-        result.innerHTML = "Такой год еще не наступил.";
-    }
-    else if (test1 >= 2017 && test1 <= 9999) {
-        result.innerHTML = "Такой год еще не наступил.";
+    else if (yearInput >= 2000 && yearInput <= 2017) {
+        yearInputResult.innerHTML = 'Вам: ' + (2017 - yearInput) + ' лет.';
     }
     else {
-        result.innerHTML = "Такой год еще не наступил.";
+        yearInputResult.innerHTML = fullYear;
     }
-
+    // yearInputResult.textContent = fullYear;
 }
+// function func13() {
+//     var test1, result;
+//     test1 = document.getElementById("yearInput").value;
+//     // test1 = parseInt(test1);
+//     result = document.getElementById("enterResult");
+//
+//     if (test1 >= 1 && test1 <= 17) {
+//         result.innerHTML = 'Вам: ' + (2017 - ('20' + test1)) + ' лет.';
+//     }
+//     else if (test1 >= 1900 && test1 <= 1999) {
+//         result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет.';
+//     }
+//     else if (test1 >= 2000 && test1 <= 2017) {
+//         result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет.';
+//     }
+//     else if (test1 >= 100 && test1 <= 1900) {
+//         result.innerHTML = 'Вам: ' + (2017 - test1) + ' лет. Но этого не может быть.';
+//     }
+//     else if (test1 >= 18 && test1 <= 99) {
+//         result.innerHTML = "Такой год еще не наступил.";
+//     }
+//     else if (test1 >= 2017 && test1 <= 9999) {
+//         result.innerHTML = "Такой год еще не наступил.";
+//     }
+//     else {
+//         result.innerHTML = "Такой год еще не наступил.";
+//     }
+//
+// }
+
+
 /* Задание 2. Пользователь вводит 2 числа. Найти и вывести максимальное из данных двух
  чисел. Учтите вариант равенства чисел.*/
 
+let numberBtn = document.getElementById('numberBtn');
+numberBtn.addEventListener('click', number, false);
+
 function number() {
 
-    var num1, num2, result, v;
-    v = document.getElementById("44");
+    let num1, num2, result, v;
+    v = document.getElementById("numberResult");
 
-    num1 = document.getElementById("22").value;
-    num1 = parseInt(num1);
+    num1 = document.getElementById("firstNumber").value;
+    num1 = parseFloat(num1);
 
-    num2 = document.getElementById("33").value;
-    num2 = parseInt(num2);
+    num2 = document.getElementById("secondNumber").value;
+    num2 = parseFloat(num2);
 
     result = Math.max(num1, num2);
 
@@ -67,25 +88,27 @@ function number() {
  она подъезде.
  Читать о else if*/
 
+let entranceBtn = document.getElementById('entranceBtn');
+entranceBtn.addEventListener('click', func1, false);
+
 function func1() {
-    var numb1, result;
-    numb1 = document.getElementById("n1").value;
+    let numb1, result;
+    numb1 = document.getElementById("numberInput").value;
     numb1 = parseInt(numb1);
-    result = document.getElementById("n2");
+    result = document.getElementById("entranceResult");
+
+    let text = "Таких квартир в этом доме нет.";
 
     if (numb1 >= 1 && numb1 <= 20) {
-        result.innerHTML = 'Ваш подъезд: 1';
+        text = 'Ваш подъезд: 1';
     }
     else if (numb1 >= 21 && numb1 <= 64) {
-        result.innerHTML = 'Ваш подъезд: 2';
+        text = 'Ваш подъезд: 2';
     }
     else if (numb1 >= 65 && numb1 <= 85) {
-        result.innerHTML = 'Ваш подъезд: 3';
+        text = 'Ваш подъезд: 3';
     }
-    else {
-        result.innerHTML = "Таких квартир в этом доме нету.";
-    }
-
+    result.innerHTML = text;
 }
 
 
@@ -96,62 +119,49 @@ function func1() {
  Если введен правильный логин и пароль вывести “Добро пожаловать”, в противном
  случае - вывести “ошибка”.*/
 
-function func2() {
-    var log1, pass1;
-    log1 = document.getElementById("log");
-    pass1 = document.getElementById("pas");
+let checkBtn = document.getElementById('checkBtn');
+checkBtn.addEventListener('click', func100, false);
 
-    if (log1 == 'ivan' && pass1 == '333') {
-        alert('Добро пожаловать!');
-    }
-    else if (log1 == 'ssss' && pass1 == '666') {
-        alert('Добро пожаловать!');
-    }
-    else if (log1 == 'gibs' && pass1 == '0000') {
-        alert('Добро пожаловать!');
-    }
-    else {
-        alert('Я вас не знаю')
-    }
+const log = document.getElementById("log").value;
+const pass = document.getElementById("pas");
+const result = document.getElementById("res");
+
+let user = {
+    'ivan': '333',
+    'ssss': '666',
+    'gibs': '0000'
+};
+
+function verification(obj, log, pass) {
+    return obj[log] === pass;
 }
 
-// var userName = prompt('Кто пришёл?', '');
-//
-// var pass = prompt('Пароль?', '');
-//
-// if (userName == 'ivan' && pass == '333')
-// {
-//     alert( 'Добро пожаловать!' );
-// }
-// else if(userName == 'ssss' && pass == '666'){
-//     alert( 'Добро пожаловать!' );
-// }
-// else if(userName == 'gibs' && pass == '0000'){
-//     alert( 'Добро пожаловать!' );
-// }
-// else if (pass == null)
-// { // (*)
-//     alert( 'Вход отменён' );
-// } else {
-//     alert( 'Я вас не знаю' )
-// }
+function hello(bool) {
+    let hello = (bool === true) ? 'Добро пожаловать!' : 'Я вас не знаю';
+    return hello;
+}
+function func100() {
+    result.innerHTML = (hello(verification(user, log, pass)));
+}
 
 /*Задание 5. Пользователь вводит 3 числа. Найти и вывести максимальное из данных трех
  чисел.*/
+let maxNumberBtn = document.getElementById('maxNumberBtn');
+maxNumberBtn.addEventListener('click', number2, false);
 
 function number2() {
 
-    var num1, num2, num3, result, v;
-    v = document.getElementById("n212");
+    let num1, num2, num3, result, v;
+    v = document.getElementById("maxNumberResult");
 
-    num1 = document.getElementById("n777").value;
-    num1 = parseInt(num1);
+    num1 = document.getElementById("firstNumberEx5").value;
+    num1 = parseFloat(num1);
 
-    num2 = document.getElementById("n778").value;
-    num2 = parseInt(num2);
+    num2 = document.getElementById("secondNumberEx5").value;
+    num2 = parseFloat(num2);
 
-    num3 = document.getElementById("n779").value;
-    num3 = parseInt(num3);
+    num3 = document.getElementById("thirdNumberEx5").value;
+    num3 = parseFloat(num3);
 
     result = Math.max(num1, num2, num3);
 
@@ -161,28 +171,40 @@ function number2() {
 // Задачи на цикл for
 /*1. Вывести четные числа от 0 до 101.*/
 
+let evenNumbersBtn = document.getElementById('evenNumberBtn');
+evenNumbersBtn.addEventListener('click', func5, false);
+
 function func5() {
 
     var p;
-    p = document.getElementById("score101");
+    p = document.getElementById("evenNumbersResult");
 
-    for (var i = 0; i <= 101; i++) {
-        if (i % 2 == 0) {
-            p.innerHTML += i + ' ';
-        }
+    for (var i = 0; i <= 101; i = i + 2) {
+        p.innerHTML += i + ' ';
     }
 }
+
 /*2. Вывести числа в следущей последовательности: 200 199 198 ... 0.*/
+
+let decreaseNumbersBtn = document.getElementById('reduceNumbersBtn');
+decreaseNumbersBtn.addEventListener('click', func6, false);
 
 function func6() {
     var p;
-    p = document.getElementById("score200");
+    p = document.getElementById("decreaseNumbersResult");
     for (i = 200; i >= 0; i--) {
         p.innerHTML += i + ' ';
     }
 }
 
+// var i = 200;
+// while (i-- > 0)
+//     console.log(i);
+
 /*3. Найти сумму чисел от 0 до 100 (включительно). (0+1+2+3+4+5).*/
+
+let sumOfNumbersBtn = document.getElementById('sumOfNumbersBtn');
+sumOfNumbersBtn.addEventListener('click', func8, false);
 
 function func7(n) {
 
@@ -193,23 +215,34 @@ function func7(n) {
     return sum;
 
 }
+
 function func8() {
     var p;
-    p = document.getElementById("sum100");
+    p = document.getElementById("sumOfNumbersResult");
     p.innerHTML += func7(100);
 }
 
 /*4. Задайте два input. В первый вводится число, во второе его степень. С помощью
  цикла возведите число в степень. Напечатайте результат.*/
 
+let exponentiationBtn = document.getElementById('exponentiationBtn');
+exponentiationBtn.addEventListener('click', func9, false);
+
 function func9() {
     var a, b, p;
-    a=document.getElementById("i567").value;
+    a = document.getElementById("number").value;
     a = parseInt(a);
-    b=document.getElementById("i987").value;
+    b = document.getElementById("exponentInput").value;
     b = parseInt(b);
-    p=document.getElementById("i944");
-    p.innerHTML+=Math.pow(a,b);
+    p = document.getElementById("exponentiationResult");
+
+    var result = a;
+    var counter = 1;
+    while (counter < b) {
+        result = result * a;
+        counter++;
+    }
+    p.innerHTML += 'Результат: ' + result;
 }
 
 /*5. С помощью цикла напечатайте таблицу умножения на 7 от 1 до 9.
@@ -217,40 +250,51 @@ function func9() {
  1*7=7
  2*7=14
  3*7=21...*/
-function func10(){
+
+let multiplicationTableBtn = document.getElementById('multiplicationTableBtn');
+multiplicationTableBtn.addEventListener('click', func10, false);
+
+function func10() {
     var a;
-    a=document.getElementById("sum719");
-    var i=7;
-    for (j=1; j<10; j++)
-    a.innerHTML+="<p>"+i+"*"+j+" = "+(i*j)+"</p>";
+    a = document.getElementById("multiplicationTableResult");
+    var i = 7;
+    for (j = 1; j < 10; j++)
+        a.innerHTML += "<p>" + i + "*" + j + " = " + (i * j) + "</p>";
 
 }
 
 /*1. С помощью цикла вывести произведение чисел от 1 до 50.*/
 
-function func11(){
+let productOfNumbersBtn = document.getElementById('productOfNumbersBtn');
+productOfNumbersBtn.addEventListener('click', func11, false);
+
+function func11() {
     var p;
-    p=document.getElementById("sum50");
+    p = document.getElementById("productOfNumbersResult");
     var i = 1;
     var production = 1;
 
-    do{
+    do {
         production *= i;
         i++;
-    }while(i <= 50)
+    } while (i <= 50)
 
-    p.innerHTML+="Произведение чисел от 1 до 50: " + production;
+    p.innerHTML += "Произведение чисел от 1 до 50: " + production;
 }
 
 
 /*2. Выведите с помощью цикла коды спецсимволов от 1000 до 2000. Напомню, что
  спецсимвол получается комбинацией &#число; Например &#1222;*/
+
+let specialCharactersBtn = document.getElementById('specialCharactersBtn');
+specialCharactersBtn.addEventListener('click', func12, false);
+
 function func12() {
     var p;
-    p=document.getElementById("score2000");
-    var i=1000;
-    while (i<=2000){
-        p.innerHTML+='&#'+i+' ';
+    p = document.getElementById("specialCharactersResult");
+    var i = 1000;
+    while (i <= 2000) {
+        p.innerHTML += '&#' + i + ' ';
         i++;
     }
 }
