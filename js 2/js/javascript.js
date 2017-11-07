@@ -172,29 +172,41 @@ function number2() {
 /*1. Вывести четные числа от 0 до 101.*/
 
 let evenNumbersBtn = document.getElementById('evenNumberBtn');
-evenNumbersBtn.addEventListener('click', func5, false);
+evenNumbersBtn.addEventListener('click', mult10);
+
+const e = document.getElementById("evenNumbersResult");
 
 function func5() {
 
-    var p;
-    p = document.getElementById("evenNumbersResult");
+    let text = '';
 
     for (var i = 0; i <= 101; i = i + 2) {
-        p.innerHTML += i + ' ';
+        text += i + ' ';
     }
+    return text;
+}
+
+function mult10 () {
+    e.innerHTML = func5(+num.value);
 }
 
 /*2. Вывести числа в следущей последовательности: 200 199 198 ... 0.*/
 
-let decreaseNumbersBtn = document.getElementById('reduceNumbersBtn');
-decreaseNumbersBtn.addEventListener('click', func6, false);
+const decreaseNumbersBtn = document.getElementById('reduceNumbersBtn');
+decreaseNumbersBtn.addEventListener('click', mult11);
+
+const p = document.getElementById("decreaseNumbersResult");
 
 function func6() {
-    var p;
-    p = document.getElementById("decreaseNumbersResult");
+    // var p;
+    let text = '';
     for (i = 200; i >= 0; i--) {
-        p.innerHTML += i + ' ';
+        text += i + ' ';
     }
+    return text;
+}
+function mult11 () {
+    p.innerHTML = func6(+num.value);
 }
 
 // var i = 200;
@@ -251,18 +263,34 @@ function func9() {
  2*7=14
  3*7=21...*/
 
-let multiplicationTableBtn = document.getElementById('multiplicationTableBtn');
-multiplicationTableBtn.addEventListener('click', func10, false);
+// let multiplicationTableBtn = document.getElementById('multiplicationTableBtn');
+// multiplicationTableBtn.addEventListener('click', func10, false);
+//
+// function func10() {
+//     var a;
+//     a = document.getElementById("multiplicationTableResult");
+//     var i = 7;
+//     for (j = 1; j < 10; j++)
+//         a.innerHTML += "<p>" + i + "*" + j + " = " + (i * j) + "</p>";
+//
+// }
+const multiplicationTableBtn = document.getElementById('multiplicationTableBtn');
+const res = document.getElementById("multiplicationTableResult");
+const num = document.querySelector('input[type="number"]');
 
-function func10() {
-    var a;
-    a = document.getElementById("multiplicationTableResult");
-    var i = 7;
-    for (j = 1; j < 10; j++)
-        a.innerHTML += "<p>" + i + "*" + j + " = " + (i * j) + "</p>";
+multiplicationTableBtn.addEventListener('click', mult);
 
+function mult9(i) {
+    let text = '';
+    for (let j = 1; j < 10; j++) {
+        text += "<p>" + i + " * " + j + " = " + (i * j) + "</p>";
+    }
+    return text;
 }
 
+function mult () {
+    res.innerHTML = mult9(+num.value);
+}
 /*1. С помощью цикла вывести произведение чисел от 1 до 50.*/
 
 let productOfNumbersBtn = document.getElementById('productOfNumbersBtn');
@@ -287,14 +315,20 @@ function func11() {
  спецсимвол получается комбинацией &#число; Например &#1222;*/
 
 let specialCharactersBtn = document.getElementById('specialCharactersBtn');
-specialCharactersBtn.addEventListener('click', func12, false);
+specialCharactersBtn.addEventListener('click', mult13);
+
+const r = document.getElementById("specialCharactersResult");
 
 function func12() {
-    var p;
-    p = document.getElementById("specialCharactersResult");
+    let text = '';
     var i = 1000;
     while (i <= 2000) {
-        p.innerHTML += '&#' + i + ' ';
+        text += '&#' + i + ' ';
         i++;
     }
+    return text;
+}
+
+function mult13 () {
+    r.innerHTML = func12(+num.value);
 }
