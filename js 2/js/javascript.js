@@ -119,12 +119,9 @@ function func1() {
  Если введен правильный логин и пароль вывести “Добро пожаловать”, в противном
  случае - вывести “ошибка”.*/
 
-let checkBtn = document.getElementById('checkBtn');
-checkBtn.addEventListener('click', func100, false);
-
-const log = document.getElementById("log").value;
-const pass = document.getElementById("pas");
-const result = document.getElementById("res");
+const login = document.querySelector('input[name="login"]');
+const pass = document.querySelector('input[name="pass"]');
+const sbmt = document.querySelector('input[type="submit"]');
 
 let user = {
     'ivan': '333',
@@ -132,16 +129,19 @@ let user = {
     'gibs': '0000'
 };
 
-function verification(obj, log, pass) {
+function verification (obj, log, pass) {
     return obj[log] === pass;
 }
 
-function hello(bool) {
+function hello (bool) {
     let hello = (bool === true) ? 'Добро пожаловать!' : 'Я вас не знаю';
     return hello;
 }
-function func100() {
-    result.innerHTML = (hello(verification(user, log, pass)));
+
+sbmt.addEventListener('click', checkPass);
+
+function checkPass () {
+    alert(hello(verification(user, login.value, pass.value)));
 }
 
 /*Задание 5. Пользователь вводит 3 числа. Найти и вывести максимальное из данных трех
