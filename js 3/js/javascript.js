@@ -1,27 +1,35 @@
-var m = [1,9,3,7,99,100,66];
+let p = document.getElementById("arrayOut");
+let inputInformation = document.getElementById('inputInformation');
+
+function f10() {
+    let x = inputInformation.value;
+    return x;
+}
+
+let m = [1,9,3,7,99,100,66];
 console.log(m);
 
 function massOut() {
-    var p = document.getElementById("arrayOut");
-    var str = '';
+    // let p = document.getElementById("arrayOut");
+    let str = '';
 
-    for(var i=0; i<m.length; i++){
+    for(let i=0; i<m.length; i++){
         str += m[i] + ', ';
     }
     p.innerHTML=str;
 }
 massOut();
 
-var pushBtn = document.getElementById('pushBtn');
+let pushBtn = document.getElementById('pushBtn');
 pushBtn.addEventListener('click', push, false);
 
 function push() {
-    var inputInformation = document.getElementById('inputInformation').value;
-    m.push(inputInformation);
+    // let inputInformation = document.getElementById('inputInformation').value;
+    m.push(f10());
     massOut();
 }
 
-var popBtn = document.getElementById('popBtn');
+let popBtn = document.getElementById('popBtn');
 popBtn.addEventListener('click', pop, false);
 
 function pop() {
@@ -29,7 +37,7 @@ function pop() {
     massOut();
 }
 
-var shiftBtn = document.getElementById('shiftBtn');
+let shiftBtn = document.getElementById('shiftBtn');
 shiftBtn.addEventListener('click', shift, false);
 
 function shift() {
@@ -37,11 +45,13 @@ function shift() {
     massOut();
 }
 
-var unshiftBtn = document.getElementById('unshiftBtn');
+let unshiftBtn = document.getElementById('unshiftBtn');
 unshiftBtn.addEventListener('click', unshift, false);
 
 function unshift() {
-    var inputInformation = document.getElementById('inputInformation').value;
-    m.unshift(inputInformation);
+    // let inputInformation = document.getElementById('inputInformation').value;
+
+    // m.unshift(inputInformation.value);
+    m.unshift(f10());
     massOut();
 }
